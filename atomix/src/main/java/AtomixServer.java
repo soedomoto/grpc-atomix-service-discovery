@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public class AtomixServer {
     public static void main(String[] args) throws Exception {
-        Address address = new Address("184.3.145.57", 12345);
+        Address address = new Address("0.0.0.0", 12345);
         AtomixReplica replica = AtomixReplica.builder(address)
                 .withTransport(new NettyTransport())
                 .withStorage(Storage.builder()
